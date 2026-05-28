@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /login
+Disallow: /register
+Disallow: /booking/
+
+Sitemap: https://rivtara.com/sitemap.xml

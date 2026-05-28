@@ -1,0 +1,155 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-sea-900);
+}
+
+.clearBtn {
+  font-size: 0.72rem;
+  color: var(--color-coral-500);
+  font-weight: 700;
+  padding: 4px 0;
+  transition: opacity var(--transition-fast);
+}
+
+.clearBtn:hover {
+  opacity: 0.75;
+}
+
+.section {
+  border: 1px solid rgba(22, 112, 130, 0.17);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.sectionToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(243, 248, 248, 0.85);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-sea-900);
+  transition: background var(--transition-fast);
+}
+
+.sectionToggle:hover {
+  background: #eaf3f3;
+}
+
+.chevron {
+  font-size: 11px;
+  color: var(--color-gray);
+  transition: transform var(--transition-fast);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.sectionBody {
+  padding: 0 16px 16px;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted-teal);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 12px 10px 34px;
+  border: 1px solid #d6e3e6;
+  border-radius: 10px;
+  font-size: var(--font-size-sm);
+  color: var(--color-deep-teal);
+  outline: none;
+  transition: border-color var(--transition-fast);
+  background: #f8fbfb;
+}
+
+.searchInput::placeholder {
+  color: #8b9ca1;
+}
+
+.searchInput:focus {
+  border-color: rgba(255, 122, 89, 0.48);
+  background: var(--color-white);
+}
+
+.checkboxList,
+.radioList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.checkboxLabel,
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--color-dark);
+  padding: 4px 0;
+}
+
+.checkboxLabel:hover,
+.radioLabel:hover {
+  color: var(--color-sea-700);
+}
+
+.checkboxLabel input[type="checkbox"],
+.radioLabel input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-sea-700);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.priceRange {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  font-weight: 600;
+}
+
+.priceValue {
+  color: var(--color-sea-900);
+  font-weight: 800;
+  font-size: 0.84rem;
+}

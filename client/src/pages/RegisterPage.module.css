@@ -1,0 +1,145 @@
+/* ===== Register Page ===== */
+.page {
+  padding-top: calc(var(--navbar-height) + 60px);
+  padding-bottom: 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--color-light);
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-card);
+  margin: 0 24px;
+}
+
+.heading {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-navy);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subheading {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ===== Form ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  color: var(--color-dark);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  background: var(--color-white);
+}
+
+.input:focus {
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 3px rgba(1, 175, 209, 0.1);
+}
+
+.input::placeholder {
+  color: var(--color-gray-light);
+}
+
+/* ===== Submit Button ===== */
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background: var(--color-yellow);
+  color: var(--color-navy);
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-top: 4px;
+}
+
+.submitBtn:hover {
+  background: var(--color-yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(254, 230, 11, 0.4);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ===== Footer Link ===== */
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+}
+
+.footerLink {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: var(--color-teal-dark);
+  text-decoration: underline;
+}
+
+/* ===== Error Message ===== */
+.errorMsg {
+  background: rgba(255, 46, 54, 0.08);
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .card {
+    padding: 32px 24px;
+    margin: 0 16px;
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+}

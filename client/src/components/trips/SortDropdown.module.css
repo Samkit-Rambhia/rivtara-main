@@ -1,0 +1,21 @@
+.select {
+  padding: 10px 40px 10px 14px;
+  border: 1px solid rgba(22, 112, 130, 0.24);
+  border-radius: 12px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-sea-900);
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  outline: none;
+  transition: all var(--transition-fast);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23052630' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.select:focus,
+.select:hover {
+  border-color: rgba(255, 122, 89, 0.46);
+}

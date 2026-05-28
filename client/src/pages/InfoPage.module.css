@@ -1,0 +1,175 @@
+.page {
+  padding: 92px 0 60px;
+  background: #f8fafb;
+  min-height: calc(100vh - 68px);
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(17, 32, 35, 0.05);
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #112023;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 36px;
+}
+
+.updated {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #112023;
+  margin-bottom: 12px;
+}
+
+.body {
+  color: #374151;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.body p {
+  margin-bottom: 12px;
+}
+
+.body ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.body li {
+  margin-bottom: 6px;
+}
+
+.body a {
+  color: #01afd1;
+  text-decoration: none;
+}
+
+.body a:hover {
+  text-decoration: underline;
+}
+
+.contactCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px 20px;
+  padding: 24px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+
+.contactLabel {
+  font-weight: 600;
+  color: #112023;
+}
+
+.contactValue {
+  color: #374151;
+}
+
+.contactValue a {
+  color: #01afd1;
+  text-decoration: none;
+}
+
+.contactForm {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #112023;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #01afd1;
+  box-shadow: 0 0 0 3px rgba(1, 175, 209, 0.15);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submitBtn {
+  align-self: start;
+  padding: 12px 32px;
+  background: #fee60b;
+  color: #112023;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #f5d900;
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.submitBtn:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 80px 0 40px;
+  }
+
+  .container {
+    margin: 0 16px;
+    padding: 32px 22px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .contactCard {
+    padding: 18px;
+    gap: 10px 14px;
+  }
+}
